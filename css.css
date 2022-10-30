@@ -30,21 +30,25 @@ body {
   color: white;
 }
 
-.part11 {
-  background-color: rgb(219, 132, 18);
-}
-.part1{
-  background-color: antiquewhite;
-  background-size: 1000px;
-}
+
+
 #attractions{
   margin-top: 200px;
-  margin-bottom: 200px;
-  font-family: 'Trebuchet MS', sans-serif;
+  margin-bottom: 100px;
+  font-family: Garamond, serif;
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
+  color:rgb(0, 102, 255)
+}
+
+.part1{
+  background-color: rgb(255, 255, 223);
+  padding-top: 100px;
+  padding-bottom: 700px;
 }
 .demo-image__lazy {
+  margin-top: 110px;
+  margin-left: 50px;
   float: left;
   width: 50%;
   height: 600px;
@@ -58,38 +62,102 @@ body {
 .demo-image__lazy .el-image:last-child {
   margin-bottom: 0;
 }
-.demo-tabs > .el-tabs__content {
-  padding: 25px;
-  color: #6b778c;
-  font-size: 45px;
-  font-weight: 600;
-}
 .ruin{
+  margin: 180px 50px 100px 70px;
+  height: 450px;
+  width: 40%;
+  font-size: 25px;
   float: left;
+  text-align: left;
+}
+.ruinh1{
+  font-family: Garamond, serif;
+  font-style: oblique;
+  color:rgb(255, 56, 56)
+}
+.ruinp{
+  font-family: Arial, Helvetica, sans-serif;
+  color:rgb(66, 62, 0)
 }
 
-.ccc {
-  margin-top: 500px;
-  padding: 100px;
+.part2{
+  margin-top: 50px;
+  padding-top: 800px;
+  background-color: rgb(255, 236, 242);
 }
-.time {
-    font-size: 12px;
-    color: #999;
+.demo-image__lazy1 {
+  margin-top: 150px;
+  margin-right: 50px;
+  float: right;
+  width: 50%;
+  height: 600px;
+  overflow-y: auto;
 }
-.bottom {
-    margin-top: 13px;
-    line-height: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-  
-.button {
-  padding: 0;
-  min-height: auto;
-}
-  
-.image {
-  width: 100%;
+.demo-image__lazy1 .el-image {
   display: block;
+  min-height: 200px;
+  margin-bottom: 10px;
+}
+.demo-image__lazy1 .el-image:last-child {
+  margin-bottom: 0;
+}
+.Senado{
+  margin: 250px 70px 100px 50px;
+  height: 450px;
+  width: 40%;
+  font-size: 25px;
+  float: right;
+  text-align: left;
+}
+.Senadoh1{
+  font-family: Garamond, serif;
+  font-style: oblique;
+  color:rgb(255, 56, 56)
+}
+.Senadop{
+  font-family: Arial, Helvetica, sans-serif;
+  color:rgb(54, 0, 99)
+}
+
+.part1{
+  background-image: url("image/part1\ background.jpg");
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  opacity: 0.3;
+  background-color: rgb(255, 255, 223);
+  padding-top: 100px;
+  padding-bottom: 700px;
+}
+.demo-image__lazy {
+  margin-top: 110px;
+  margin-left: 50px;
+  float: left;
+  width: 50%;
+  height: 600px;
+  overflow-y: auto;
+}
+.demo-image__lazy .el-image {
+  display: block;
+  min-height: 200px;
+  margin-bottom: 10px;
+}
+.demo-image__lazy .el-image:last-child {
+  margin-bottom: 0;
+}
+.ruin{
+  margin: 180px 50px 100px 70px;
+  height: 450px;
+  width: 40%;
+  font-size: 25px;
+  float: left;
+  text-align: left;
+}
+.ruinh1{
+  font-family: Garamond, serif;
+  font-style: oblique;
+  color:rgb(255, 56, 56)
+}
+.ruinp{
+  font-family: Arial, Helvetica, sans-serif;
+  color:rgb(66, 62, 0)
 }
