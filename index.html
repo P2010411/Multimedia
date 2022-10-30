@@ -13,9 +13,10 @@
 <body class="container">
 
 <div id="app">
+  <div id="webtop"></div>
   <el-affix :offset="0">
     <div class="a1" style=" text-align:right">
-      <el-button :type="button1.type" class= "top1" ></el-button>
+      <el-button :type="button1.type" class= "top1" onclick="window.location.href ='#webtop'"></el-button>
       <el-button :key="button1.text" :type="button1.type" link class="top" onclick="window.location.href ='#aaa'">{{button1.text}}</el-button> 
       <el-button :key="button2.text" :type="button2.type" link class="top">{{button2.text}}</el-button>
       <el-button :key="button3.text" :type="button3.type" link class="top">{{button3.text}}</el-button>
@@ -30,16 +31,21 @@
   </div>
 
   <div id="aaa"></div>
-  <div>
+
+  
     <div id="attractions">
       <h1>Macau Tourist Attractions</h1>
     </div>
-      <div class="dasanba">
-        <div class="demo-image__lazy">
-          <el-image v-for="item in items" :key="item" :src="item" lazy />
-        </div>
-      </div>  
-  </div>
+    <div class="part11">
+    <div class="part1">
+      <div class="demo-image__lazy">
+        <el-image v-for="item in items" :key="item" :src="item" lazy />
+      </div>
+      <div class="ruin">
+        <h1> Ruins of St. Paul's Cathedral </h1>
+      </div>
+    </div>
+    </div>
 
   <div class="ccc">
   <el-row>
@@ -66,9 +72,6 @@
   </el-row>
   </div>
 
-  <div class="demo-image__lazy">
-    <el-image v-for="url in urls" :key="url" :src="url" lazy />
-  </div>
 
 </div>
 

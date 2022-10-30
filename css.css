@@ -29,6 +29,14 @@ body {
   font-size: 35px;
   color: white;
 }
+
+.part11 {
+  background-color: rgb(219, 132, 18);
+}
+.part1{
+  background-color: antiquewhite;
+  background-size: 1000px;
+}
 #attractions{
   margin-top: 200px;
   margin-bottom: 200px;
@@ -36,14 +44,10 @@ body {
   text-align: center;
   font-size: 25px;
 }
-
-.dasanba {
-  background-color: antiquewhite;
-  background-size: 100% 800px;
-  padding: 500px;
-}
 .demo-image__lazy {
-  height: 500px;
+  float: left;
+  width: 50%;
+  height: 600px;
   overflow-y: auto;
 }
 .demo-image__lazy .el-image {
@@ -60,7 +64,9 @@ body {
   font-size: 45px;
   font-weight: 600;
 }
-
+.ruin{
+  float: left;
+}
 
 .ccc {
   margin-top: 500px;
