@@ -1,0 +1,89 @@
+body {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+.a1 {
+  background-color: white;
+}
+.top1 {
+  background-image: url("image/macau1.jpg");
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  margin: 0px 1000px 0px 25px;
+  padding: 50px 70px;
+  border-style: none;
+}
+.top {
+  font-size: 32px;
+  font-family: Garamond, serif;
+  margin: 25px 60px;
+}
+.background{
+  padding: 332px;
+  background-image: url("image/welcome\ background\ 1.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.welcome{
+  font-family: 'Courier New', monospace;
+  font-size: 35px;
+  color: white;
+}
+#attractions{
+  margin-top: 200px;
+  margin-bottom: 200px;
+  font-family: 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: 25px;
+}
+
+.dasanba {
+  background-color: antiquewhite;
+  background-size: 100% 800px;
+  padding: 500px;
+}
+.demo-image__lazy {
+  height: 500px;
+  overflow-y: auto;
+}
+.demo-image__lazy .el-image {
+  display: block;
+  min-height: 200px;
+  margin-bottom: 10px;
+}
+.demo-image__lazy .el-image:last-child {
+  margin-bottom: 0;
+}
+.demo-tabs > .el-tabs__content {
+  padding: 25px;
+  color: #6b778c;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+
+.ccc {
+  margin-top: 500px;
+  padding: 100px;
+}
+.time {
+    font-size: 12px;
+    color: #999;
+}
+.bottom {
+    margin-top: 13px;
+    line-height: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.button {
+  padding: 0;
+  min-height: auto;
+}
+  
+.image {
+  width: 100%;
+  display: block;
+}

@@ -1,41 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>chap 3 example</title>
+  <title>Welcome to Macau</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <script src="https://unpkg.com/vue@3.2"></script>
   <script src="https://unpkg.com/element-plus"></script>
   <link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css" />
+  <link rel="stylesheet" href="css.css">
 </head>
 <body class="container">
 
-<h1>Example p321</h1>
-<p>This example uses the Rate component from the Desktop UI library <a href="https://element-plus.org/" target="_blank">Element Plus</a>.</p>
-
-<hr>
-
 <div id="app">
-  <span>Rating: {{ value }}</span>
-  <el-rate v-model="value" :colors="colors"></el-rate>
+  <el-affix :offset="0">
+    <div class="a1" style=" text-align:right">
+      <el-button :type="button1.type" class= "top1" ></el-button>
+      <el-button :key="button1.text" :type="button1.type" link class="top" onclick="window.location.href ='#aaa'">{{button1.text}}</el-button> 
+      <el-button :key="button2.text" :type="button2.type" link class="top">{{button2.text}}</el-button>
+      <el-button :key="button3.text" :type="button3.type" link class="top">{{button3.text}}</el-button>
+      <el-button :key="button4.text" :type="button4.type" link class="top">{{button4.text}}</el-button>
+    </div>
+  </el-affix>
+
+  <div class="background">
+    <div class="welcome">
+      <h1>Welcome to Macau!</h1>
+    </div>
+  </div>
+
+  <div id="aaa"></div>
+  <div>
+    <div id="attractions">
+      <h1>Macau Tourist Attractions</h1>
+    </div>
+      <div class="dasanba">
+        <div class="demo-image__lazy">
+          <el-image v-for="item in items" :key="item" :src="item" lazy />
+        </div>
+      </div>  
+  </div>
+
+  <div class="ccc">
+  <el-row>
+    <el-col
+      v-for="(o, index) in 2"
+      :key="o"
+      :span="8"
+      :offset="index > 0 ? 2 : 0"
+    >
+      <el-card :body-style="{ padding: '0px' }">
+        <img
+          src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
+          class="image"
+        />
+        <div style="padding: 14px">
+          <span>Yummy hamburger</span>
+          <div class="bottom">
+            <time class="time">{{ currentDate }}</time>
+            <el-button text class="button">Operating</el-button>
+          </div>
+        </div>
+      </el-card>
+    </el-col>
+  </el-row>
+  </div>
+
+  <div class="demo-image__lazy">
+    <el-image v-for="url in urls" :key="url" :src="url" lazy />
+  </div>
+
 </div>
 
-<hr/>
+
 
 <script>
-const opts = {
-  components: { ElRate: ElementPlus.ElRate },
+
+  const opts = {
+    components: { 
+      ElButton: ElementPlus.ElButton,
+      ElRow: ElementPlus.ElRow,
+      ElCol: ElementPlus.ElCol,
+      ElCard: ElementPlus.ElCard,
+      ElImage: ElementPlus.ElImage,
+      ElTable: ElementPlus.ElTable,
+      ElTabs: ElementPlus.ElTabs,
+      ElTabPane: ElementPlus.ElTabPane,
+      ElAffix: ElementPlus.ElAffix,
+      El0: ElementPlus.ElCarousel,
+      ElCarouselItem: ElementPlus.ElCarouselItem,
+    },
   data() {
     return {
-      value: 3,
-      colors: ['#99A9BF', '#F7BA2A', '#FF9900']
+      currentDate: (new Date).toDateString(),
+      urls: [
+        'https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg',
+        'https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg',
+        'https://fuss10.elemecdn.com/0/6f/e35ff375812e6b0020b6b4e8f9583jpeg.jpeg',
+        'https://fuss10.elemecdn.com/9/bb/e27858e973f5d7d3904835f46abbdjpeg.jpeg',
+        'https://fuss10.elemecdn.com/d/e6/c4d93a3805b3ce3f323f7974e6f78jpeg.jpeg',
+        'https://fuss10.elemecdn.com/3/28/bbf893f792f03a54408b3b7a7ebf0jpeg.jpeg',
+        'https://fuss10.elemecdn.com/2/11/6535bcfb26e4c79b48ddde44f4b6fjpeg.jpeg',
+      ],
+      items: [
+        'image/dasanba 1.jpg',
+        'image/dasanba 2.jpg',
+        'image/dasanba 3.jpg',
+        'image/dasanba 4.jpg',
+      ],
+      button1: { type: '', text: 'Attractions' },
+      button2: { type: '', text: 'About' },
+      button3: { type: '', text: 'Gallery' },
+      button4: { type: '', text: 'Home' },
     }
-  }
+  },
+  
 };
 
 const vm = Vue.createApp(opts).mount('#app');
 </script>
+
+
 
 </body>
 </html>
