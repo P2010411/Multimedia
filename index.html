@@ -20,7 +20,7 @@
       <el-button :key="button7.text" :type="button7.type" link class="top" onclick="window.location.href ='#webtop'">{{button7.text}}</el-button>
       <el-button :key="button4.text" :type="button4.type" link class="top">{{button4.text}}</el-button>
       <el-button :key="button3.text" :type="button3.type" link class="top">{{button3.text}}</el-button>
-      <el-button :key="button2.text" :type="button2.type" link class="top">{{button2.text}}</el-button>
+      <el-button :key="button2.text" :type="button2.type" link class="top" onclick="window.location.href ='#food'">{{button2.text}}</el-button>
       <el-button :key="button1.text" :type="button1.type" link class="top" onclick="window.location.href ='#attractions'">{{button1.text}}</el-button>
     </div>
   </el-affix>
@@ -54,8 +54,7 @@
            stand witness to what was the first western-style university in the Far East, with an elaborate academic programme. 
            Nowadays, the facade of the Ruins of St. Paul's functions symbolically as an altar to the city.</p>
       </div>
-      <p>Click here to view more pictures</p>
-      <img src="image/dasanba.png" style="float: right; height: 110px; width: 110px;">
+      <img src="image/dasanba.png" style="float: right; position:absolute; height: 110px; width: 110px;">
      </el-card>
    </div> 
 
@@ -69,7 +68,7 @@
            :initial-index="0"
          />
        </div>
-       <div class="ruin">
+       <div class="tower">
          <h1 class="ruinh1"> Macau Tower Convention </h1>
          <p class="ruinp">Opened on 19th December, 2001, Macau Tower is 338 metres in height. It is an elegant construction offering 
           magnificent panoramic views all over Macao and much of the Pearl River Delta from its observation deck and revolving restaurant, 
@@ -90,7 +89,7 @@
           :initial-index="0"
         />
       </div>
-      <div class="ruin">
+      <div class="panda">
         <h1 class="ruinh1"> Macao Giant Panda Pavilion </h1>
         <p class="ruinp">Nestled against a hill side in Seac Pai Van Park in Coloane in a fan-shaped layout of about 3,000m², Macao 
           Giant Panda Pavilion is designed to take advantage of combining the terrain’s natural undulations with the architectural 
@@ -113,7 +112,7 @@
           :initial-index="0"
         />
       </div>
-      <div class="ruin">
+      <div class="senado">
         <h1 class="ruinh1"> Senado Square </h1>
         <p class="ruinp">Senado Square has been Macao's urban centre for centuries, and is still the most popular venue for public 
         events and celebrations today. Located close to the former Senate building, Sam Kai Vui Kun ( Kuan Tai Temple ) is also a 
@@ -125,8 +124,77 @@
     </el-card>
   </div>
 
-
-  
+  <div id="food">
+    <h1>Dining in Macau</h1>
+  </div>
+  <el-card id="box-card1">
+    <div style="height: auto; width: 25%; margin: 30px 4.15%;float: left;">
+      <el-card :body-style="{ padding: '0px' }">
+        <img
+          src="image/majiexiu.jpg"
+          class="image"
+         />
+        <div style="padding: 14px; text-align: center; font-size: 30px;">
+          <span>Bacalhau Cakes</span>
+        </div>
+      </el-card>
+    </div>
+    <div style="height: auto; width: 25%; margin: 30px 4.15%;float: left;">
+      <el-card :body-style="{ padding: '0px' }">
+        <img
+          src="image/mianzhi.jpg"
+          class="image"
+         />
+        <div style="padding: 14px; text-align: center; font-size: 30px;">
+          <span>Minchi, Macao Style</span>
+        </div>
+      </el-card>
+    </div>
+    <div style="height: auto; width: 25%; margin: 30px 4.15%;float: left;">
+      <el-card :body-style="{ padding: '0px' }">
+        <img
+          src="image/shaozhugu.jpg"
+          class="image"
+         />
+        <div style="padding: 14px; text-align: center; font-size: 30px;">
+          <span>Grilled Veal Ribs</span>
+        </div>
+      </el-card>
+    </div>
+    <div style="height: auto; width: 25%; margin: 30px 4.15%;float: left;">
+      <el-card :body-style="{ padding: '0px' }">
+        <img
+          src="image/danta.jpg"
+          class="image"
+         />
+        <div style="padding: 14px; text-align: center; font-size: 30px;">
+          <span>Portuguese Egg Tarts</span>
+        </div>
+      </el-card>
+    </div>
+    <div style="height: auto; width: 25%; margin: 30px 4.15%;float: left;">
+      <el-card :body-style="{ padding: '0px' }">
+        <img
+          src="image/yuntunmian.jpg"
+          class="image"
+         />
+        <div style="padding: 14px; text-align: center; font-size: 30px;">
+          <span>Wonton Noodles</span>
+        </div>
+      </el-card>
+    </div>
+    <div style="height: auto; width: 25%; margin: 30px 4.15%;float: left;">
+      <el-card :body-style="{ padding: '0px' }">
+        <img
+          src="image/niuweui.png"
+          class="image"
+         />
+        <div style="padding: 14px; text-align: center; font-size: 30px;">
+          <span>Stewed Oxtail with Red Wine</span>
+        </div>
+      </el-card>
+    </div>
+  </el-card>
 
 
 
@@ -157,35 +225,35 @@
   data() {
     return {
       button1: { type: '', text: 'Attractions' },
-      button2: { type: '', text: 'About' },
+      button2: { type: '', text: 'Food' },
       button3: { type: '', text: 'Gallery' },
       button4: { type: '', text: 'Home' },
       button5: { type: '', text: "Ruins of St. Paul's Cathedral" },
       button6: { type: '', text: "Senado Square" },
       button7: { type: '', text: "Top" },
 
-      url: 'image/dasanba 2.jpg',
+      url: 'image/dasanba click.png',
       srcList: [
         'image/dasanba 2.jpg',
         'image/dasanba 1.jpg',
         'image/dasanba 3.jpg',
         'image/dasanba 4.jpg',
       ],
-      url1: 'image/Senado 4.jpg',
+      url1: 'image/senado click.png',
       srcList1: [
         'image/Senado 2.jpg',
         'image/Senado 1.jpg',
         'image/Senado 3.jpg',
         'image/Senado 4.jpg',
       ],
-      url2: 'image/tower 1.jpg',
+      url2: 'image/tower click.png',
       srcList2: [
         'image/tower 1.jpg',
         'image/tower 2.jpg',
         'image/tower 3.jpg',
         'image/tower 4.jpg',
       ],
-      url3: 'image/panda 3.jpg',
+      url3: 'image/panda click.png',
       srcList3: [
         'image/panda 1.jpg',
         'image/panda 2.jpg',
