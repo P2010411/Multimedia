@@ -17,11 +17,11 @@
   <el-affix :offset="0">
     <div class="a1">
       <el-button :type="button1.type" class= "top1" onclick="window.location.href ='#webtop'"></el-button>
-      <el-button :key="button7.text" :type="button7.type" link class="top" onclick="window.location.href ='#webtop'">{{button7.text}}</el-button>
-      <el-button :key="button4.text" :type="button4.type" link class="top">{{button4.text}}</el-button>
-      <el-button :key="button3.text" :type="button3.type" link class="top">{{button3.text}}</el-button>
-      <el-button :key="button2.text" :type="button2.type" link class="top" onclick="window.location.href ='#food'">{{button2.text}}</el-button>
-      <el-button :key="button1.text" :type="button1.type" link class="top" onclick="window.location.href ='#attractions'">{{button1.text}}</el-button>
+      <el-button :key="button7.text" :type="button7.type" link class="top" onclick="window.location.href ='#webtop'" style="color:white;">{{button7.text}}</el-button>
+      <el-button :key="button4.text" :type="button4.type" link class="top" onclick="window.location.href ='#contact'" style="color:white;">{{button4.text}}</el-button>
+      <el-button :key="button3.text" :type="button3.type" link class="top" onclick="window.location.href ='#food'" style="color:white;">{{button3.text}}</el-button>
+      <el-button :key="button2.text" :type="button2.type" link class="top" onclick="window.location.href ='#festival'" style="color:white;">{{button2.text}}</el-button>
+      <el-button :key="button1.text" :type="button1.type" link class="top" onclick="window.location.href ='#attractions'" style="color:white;">{{button1.text}}</el-button>
     </div>
   </el-affix>
 
@@ -34,7 +34,6 @@
   <div id="attractions">
     <h1>Macau Tourist Attractions</h1>
   </div>
-
    <div id="theruins">
      <el-card id="box-card">
        <div class="demo-image__preview">
@@ -120,9 +119,64 @@
         the multicultural dimension of the Macao community. The square is surrounded by pastel coloured neo-classical buildings, 
         creating a consistent and harmonious Mediterranean atmosphere.</p>
       </div>
-      <img src="image/Senado.png" style="float: right; height: 120px; width: 140px;">
+      <img src="image/Senado.png" style="float: right;  position:relative; height: 120px; width: 140px;">
     </el-card>
   </div>
+  <el-divider>
+    ★ Macau Tourist Attractions ★
+  </el-divider>
+
+  <div id="festival">
+    <h1>Festivities & Events</h1>
+  </div>
+
+    <div id="theruins">
+      <el-card id="box-card">
+        <div class="demo-image__preview">
+          <el-image
+            style="width: 700px; height: 500px; box-shadow: 20px 30px 10px grey;"
+            :src="url4"
+            :preview-src-list="srcList4"
+            :initial-index="0"
+          />
+       </div>
+       <div class="Car">
+         <h1 class="ruinh1"> Macau Grand Prix </h1>
+         <p class="ruinp">Recognized as the most internationally prestigious event on the local calendar, the legendary 
+          Macau Grand Prix - now edging into its seventh decade - pits the best motorcycle, WTCR and Formula 3 racers in 
+          the world against each other and the clock in dedicated competitions along the narrow, twisting Guia street circuit 
+          of Macao city. The high-pitched whine of racing engines, the roar of the crowd, and the adrenalin-charged atmosphere 
+          make for a colourful four days of non-stop, head-turning excitement.</p>
+       </div>
+       <img src="image/car icon.png" style="float: right; position:relative; bottom: 600px; height: 190px; width: 190px;">
+      </el-card>
+    </div> 
+
+    <div id="theruins">
+      <el-card id="box-card">
+        <div class="demo-image__preview">
+          <el-image
+            style="width: 700px; height: 500px; box-shadow: 20px 30px 10px grey;"
+            :src="url5"
+            :preview-src-list="srcList5"
+            :initial-index="0"
+          />
+       </div>
+       <div class="foodfestival">
+         <h1 class="ruinh1"> Macau Food Festival</h1>
+         <p class="ruinp">Every year around November, the Macau Food Festival - sited in the rotunda opposite the Macau 
+          Tower - attracts local residents and visitors beguiled by delicious Asian, European, Mainland Chinese and local
+           delicacies. Liberally salted with exciting live entertainment and games, this foodfest has become a firm favourite 
+           for its uninhibited, relaxed and welcoming atmosphere of street stalls, booths and tents.</p>
+       </div>
+       <img src="image/macau food.png" style="float: right; position:relative; bottom: 550px;height: 170x; width: 200px;">
+      </el-card>
+    </div>
+
+    <el-divider>
+      ★ Festivities & Events ★
+    </el-divider>
+
 
   <div id="food">
     <h1>Dining in Macau</h1>
@@ -134,7 +188,7 @@
           src="image/majiexiu.jpg"
           class="image"
          />
-        <div style="padding: 14px; text-align: center; font-size: 30px;">
+        <div style="padding: 14px; text-align: center; font-size: 30px; font-family: 'Trebuchet MS', sans-serif;">
           <span>Bacalhau Cakes</span>
         </div>
       </el-card>
@@ -145,7 +199,7 @@
           src="image/mianzhi.jpg"
           class="image"
          />
-        <div style="padding: 14px; text-align: center; font-size: 30px;">
+        <div style="padding: 14px; text-align: center; font-size: 30px; font-family: 'Trebuchet MS', sans-serif;">
           <span>Minchi, Macao Style</span>
         </div>
       </el-card>
@@ -156,7 +210,7 @@
           src="image/shaozhugu.jpg"
           class="image"
          />
-        <div style="padding: 14px; text-align: center; font-size: 30px;">
+        <div style="padding: 14px; text-align: center; font-size: 30px; font-family: 'Trebuchet MS', sans-serif;">
           <span>Grilled Veal Ribs</span>
         </div>
       </el-card>
@@ -167,7 +221,7 @@
           src="image/danta.jpg"
           class="image"
          />
-        <div style="padding: 14px; text-align: center; font-size: 30px;">
+        <div style="padding: 14px; text-align: center; font-size: 30px; font-family: 'Trebuchet MS', sans-serif;">
           <span>Portuguese Egg Tarts</span>
         </div>
       </el-card>
@@ -178,7 +232,7 @@
           src="image/yuntunmian.jpg"
           class="image"
          />
-        <div style="padding: 14px; text-align: center; font-size: 30px;">
+        <div style="padding: 14px; text-align: center; font-size: 30px; font-family: 'Trebuchet MS', sans-serif;">
           <span>Wonton Noodles</span>
         </div>
       </el-card>
@@ -189,12 +243,26 @@
           src="image/niuweui.png"
           class="image"
          />
-        <div style="padding: 14px; text-align: center; font-size: 30px;">
+        <div style="padding: 14px; text-align: center; font-size: 30px; font-family: 'Trebuchet MS', sans-serif;">
           <span>Stewed Oxtail with Red Wine</span>
         </div>
       </el-card>
     </div>
   </el-card>
+
+  <el-divider>
+    ★ Dining in Macau ★
+  </el-divider>
+
+  <div style="text-align:center;">
+    <el-button color="black" :dark="isDark" plain onclick="window.location.href ='https://www.macaotourism.gov.mo/en/'" style="margin-top: 150px; padding:25px;font-size: 30px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">If you want to know more about Macau, click it!</el-button>
+  </div>
+
+  <div id="contact">
+    <h1 class="name">COMP311-312 Assignment 1</h1>
+    <h1 class="name">Student Name: Grant Jing</h1>
+    <h1 class="name">Student No.: P2010411</h1>
+  </div>
 
 
 
@@ -219,17 +287,14 @@
       ElTabs: ElementPlus.ElTabs,
       ElTabPane: ElementPlus.ElTabPane,
       ElAffix: ElementPlus.ElAffix,
-      El0: ElementPlus.ElCarousel,
-      ElCarouselItem: ElementPlus.ElCarouselItem,
+      ElDivider: ElementPlus.ElDivider,
     },
   data() {
     return {
       button1: { type: '', text: 'Attractions' },
-      button2: { type: '', text: 'Food' },
-      button3: { type: '', text: 'Gallery' },
-      button4: { type: '', text: 'Home' },
-      button5: { type: '', text: "Ruins of St. Paul's Cathedral" },
-      button6: { type: '', text: "Senado Square" },
+      button2: { type: '', text: 'Events' },
+      button3: { type: '', text: 'Food' },
+      button4: { type: '', text: 'Contact' },
       button7: { type: '', text: "Top" },
 
       url: 'image/dasanba click.png',
@@ -259,7 +324,22 @@
         'image/panda 2.jpg',
         'image/panda 3.jpg',
         'image/panda 4.jpg',
-      ]
+      ],
+      url4: 'image/car 0.png',
+      srcList4: [
+        'image/car 2.jpg',
+        'image/car 1.jpg',
+        'image/car 3.jpg',
+        'image/car 4.jpg',
+      ],
+      url5: 'image/food 0.png',
+      srcList5: [
+        'image/food 1.jpg',
+        'image/food 5.jpg',
+        'image/food 2.jpg',
+        'image/food 3.jpg',
+        'image/food 4.jpg',
+      ],
     }
   },
   
